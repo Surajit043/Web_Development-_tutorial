@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background</title>
+    <style>
+        #firstpara {
+            background-color: royalblue;
+            width: 432px;
+            height: 34px;
+            border: red;
+            /* border-color: red; */
+            /* border-width: 10px; */
+            /* border-style:solid ; */
+            border: 10px solid red;
+            /* thos the alternate way to skip these rhree stpes and make it in one step */
+            border-radius: 4px;
+            
+        }
+
+        #secondpara{
+            background-color: royalblue;
+            width: 432px;
+            height: 34px;
+            /* border: 10px solid red; */
+            border-top: 5px solid rgb(182, 37, 170);
+            border-bottom: 5px solid goldenrod;
+            border-left:3px solid hotpink;
+            border-right: 9px solid blue;
+            border-top-left-radius: 05px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 7px;
+            border-left-width: 10px;
+        }
+        #thirdpara{
+            /* background-color: royalblue; */
+            width: 1500px;
+            height:500px;
+            border: red;
+            border: 10px solid red;
+            /* thos the alternate way to skip these rhree stpes and make it in one step */
+            border-radius: 4px;
+            background-image:url(colg.jpg);
+            background-repeat: no-repeat;/* repeat-x and repeat-y will makes it to allow repeat in x-axis and y-axis*/
+            background-position: center,center; /* alsp you can use x,y position to set the background position*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is the headline</h2>
+    <p id="firstpara">this is the paragrapg of the headline</p>
+
+    <h2>This is the second headline</h2>
+    <p id="secondpara">this is the paragrapg of the headline</p>
+
+    <h2>This is the thired headline</h2>
+    <p id="thirdpara">this is the paragrapg of the headline</p>
+
+
+</body>
+
+</html>

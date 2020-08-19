@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn {
+            background-color: aqua;
+            color: black;
+            padding: 7px 12px;
+            margin: 10px auto;
+            border: 2px solid red;
+            border-radius: 7px;
+            cursor: pointer;
+            display: flex;
+        }
+
+        #btn:hover {
+            background-color: salmon;
+            border: 2px solid rgba(0, 38, 255, 0.678);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id">
+        <h1>Thia is My Heading</h1>
+        <P id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptatibus, dolorem, corrupti
+            impedit voluptates dolorum atque ipsum at officia quidem consequuntur sunt ipsam! Labore provident molestiae
+            maxime quidem enim id laboriosam repellat ex. Non, ab. Veniam at minima nobis culpa doloribus accusamus
+            necessitatibus totam magnam quo ea eos voluptate dignissimos, incidunt odit corporis ducimus dolorum
+            cupiditate laudantium nesciunt illum mollitia ut natus! Sunt, voluptates veniam accusantium, alias quisquam
+            ex doloribus, reiciendis eligendi illo temporibus porro excepturi culpa sit repudiandae magni similique
+            eaque? Perferendis assumenda, neque optio ratione repellat accusantium delectus libero nulla ab quidem
+            molestias dicta labore sunt praesentium sapiente dolore velit fugiat incidunt sequi? Quidem quod soluta
+            illum nulla perferendis ad voluptatem eligendi delectus, necessitatibus recusandae. Impedit repellendus
+            omnis suscipit! Laudantium illum vero architecto dolore, repudiandae eos tempore tempora ut nostrum ea quod
+            sequi, eveniet impedit voluptatem, facilis eius neque quos magnam dicta. Iste eveniet, tempore quia vitae
+            quo totam optio nulla adipisci mollitia corporis est accusamus repellat, culpa soluta vel tenetur suscipit
+            asperiores minima. Dicta tempore distinctio, dolores, aspernatur et eos veniam autem eius, illo nesciunt
+            ullam beatae nostrum excepturi. Deserunt ullam, sint necessitatibus ipsa delectus quos totam quam nisi
+            aliquid quisquam veritatis harum tempora. Voluptatem fugiat officia, et mollitia cum quas! Itaque assumenda
+            ea sit quibusdam hic facilis voluptatem incidunt aliquam quaerat sapiente enim deserunt ad beatae,
+            perspiciatis vel autem magni sequi maiores libero corrupti blanditiis aut ipsa obcaecati fuga? Corporis
+            adipisci mollitia, quaerat nesciunt amet sint vel obcaecati molestias totam sed dicta sequi dolore error
+            officiis!</P>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+</body>
+<script>
+    function toggleHide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        if (para.style.display != 'none') { // here `!=` mean `is not equal to`.
+            para.style.display = 'none';
+        }
+        else {
+            para.style.display = 'block';
+        }
+    }
+
+    // if we want to run other events then we can use eventlistener 
+    let para = document.getElementById("para");
+    para.addEventListener('mouseover', function run() {
+        // let name =prompt("plese insert your name to read the articale");
+        // console.log(name);
+
+        console.log('MOUSE INIDE');
+
+    });
+    para.addEventListener("mouseout", function () {
+        // alert ("mouse outside");
+        console.log("mouse outside");
+    });
+</script>
+
+</html>

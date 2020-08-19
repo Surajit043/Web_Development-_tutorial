@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Admission Form</h2>
+    <form action="backed.php">
+        <label for="name">my name</label>
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="my email">
+        </div>
+        <br>
+        <div>
+            date of birth: <input type="date" name="myDOB">
+        </div>
+        <br>
+        <div>
+            agree: <input type="checkbox" name="mydecission">
+        </div>
+        <br>
+        <div>
+            adress: <br> <textarea name="adress" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            gender: male <input type="radio" name="mygender">
+            female: <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <label for="your choice">what you want</label>
+            <select name="tour choice" id="your choice">
+                <option value="bmw">BMW</option>
+                <option value="toyota">toyota</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+</body>
+
+</html>
