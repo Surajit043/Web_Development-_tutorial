@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manupulating</title>
+</head>
+
+<body>
+    <h2 id="heading">This ia a Heaeding</h2>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>magagine</li>
+            <li>science</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is Another One
+    </div>
+</body>
+<script>
+    // let list = document.getElementById ('heading')
+    // console.log(list)
+    let list = document.getElementById('main')
+    console.log(list)
+
+    let nav = document.getElementById('nav')
+    console.log(nav)
+
+    // let contain = document.getElementsByClassName('container')
+    // console.log(contain)
+
+
+    let sel = document.querySelector('#nav>li')
+    console.log('selectors From CSS', sel) //this show ony the first elemet of li inside the #nav
+    let sel1 = document.querySelectorAll('#nav>li')
+    console.log('selectors From CSS', sel1) //this show ony the All elemet of li inside the #nav
+
+
+</script>
+
+</html>
