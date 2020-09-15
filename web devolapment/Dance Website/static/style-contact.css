@@ -7,7 +7,7 @@
 }
 
 section::before{
-    background: url(/static/image5.jpg) no-repeat center center/cover;
+    background: url(/static/images/image5.jpg) no-repeat center center/cover;
     content: " ";
     position: absolute;
     top: 35px;
