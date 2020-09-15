@@ -1,0 +1,22 @@
+extends base.pug
+block title
+    title Contact Us-Dance Accademy
+
+block scripts
+    script(src='/static/index.js')
+block style
+    style 
+        include ../static/style-contact.css
+block content
+    section#contact 
+        h3 Contact Us 
+        form(action="bakend.php")
+            leabel.line(for="name") Name
+            input(type="text" name="name"  id="name"  placeholder="Enter Your Name" ) 
+            leabel.line(for="age") Age
+            input(type="age" name="age"  id="age"  placeholder="Enter Your Age" ) 
+            leabel.line(for="gender") Gender
+            input(type="text" name="Gender" id="Gender"  placeholder="Enter Your Gender") 
+            leabel.line(for="no") Mobile NO.
+            input(type="phone" name="Phone no"  id="no"  max="10"  placeholder="Enter Your Phone No.") 
+            button(type="submit") Submit

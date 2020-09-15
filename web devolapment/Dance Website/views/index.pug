@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+  title Dance Accademy
+  script(src='/static/index.js')
+  style 
+       include ../static/style.css
+    
+  body
+    nav#navbar
+        img(src="/static/logo.png", alt="logo")
+        h2 #[a(href="/") SDA] 
+        ul
+            
+            li #[a(href="/") Home] 
+            li #[a(href="#") Services] 
+            li #[a(href="#" name="sponcer") Sponcers] 
+            li #[a(href="/") About Us] 
+            li #[a(href="/contact.pug") Contact Us] 
+    section#intro-section      
+        h2 Welcome to India's Best Dance Accademy.
+        p Why Walk ! When You Want To Dance :)
+    section#service-section
+        h3 Our Services
+        div#container
+            
+            div.cards
+                h2 Classical Dance
+                    div.card-inside
+                        img(src="/static/classical.png", alt="img" class="img")
+                        p Here We Provide Best Ever Dance Coching Over Classical Dance. Specillist Guide also Provided as Well As Resular Guide. WE give  You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+            div.cards     
+                h2 Modern Dance
+                    div.card-inside
+                        img(src="/static/morden.png", alt="img" class="img")
+                        p Here We Provide Best Ever Dance Coching Over Modern Dance. Specillist Guide also Provided as Well As Resular Guide. WE give  You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+            div.cards 
+                h2 Hip Hop Dance
+                    div.card-inside
+                        img(src="/static/hiphop.png", alt="img" class="img")
+                        p Here We Provide Best Ever Dance Coching Over Hip Hop Dance. Specillist Guide also Provided as Well As Resular Guide. WE give  You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+            div.cards
+                h2 lyrical Dance
+                    div.card-inside
+                        img(src="/static/lyrical.png", alt="img" class="img")
+                        p Here We Provide Best Ever Dance Coching Over lyrical Dance. Specillist Guide also Provided as Well As Resular Guide. WE give You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+            div.cards
+                h2 jazz Dance
+                    div.card-inside
+                        img(src="/static/jazz.png", alt="img" class="img")
+                        p Here We Provide Best Ever Dance Coching Over jazz Dance. Specillist Guide also Provided as Well As Resular Guide. WE give You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+            div.cards
+                h2 contemporary Dance
+                    div.card-inside
+                        img(src="/static/contemporary.png", alt="img" class="img" id="img-last")
+                        p Here We Provide Best Ever Dance Coching Over contemporary Dance. Specillist Guide also Provided as Well As Resular Guide. WE give  You Fecility To Choose A Guide as your Regular Guide.
+                        a(href="#") Visit Here >>
+    section#sponcer-section(name="sponcer")
+        div#sp
+            h3 Our Sponcers
+            div#sp-logo
+                img(src="/static/sponcer1.png", alt="sponcer" id="sponcer1")
+                img(src="/static/sponcer2.png", alt="sponcer" id="sponcer2")
+                img(src="/static/sponcer3.png", alt="sponcer" id="sponcer3")
+                img(src="/static/sponcer4.png", alt="sponcer" id="sponcer4")
+                img(src="/static/sponcer5.png", alt="sponcer" id="sponcer5")
+
+  footer#footer
+    p Copyright (c) Dance Accademy
