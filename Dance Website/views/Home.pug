@@ -2,7 +2,7 @@ extends base.pug
 block title
     title Dance Accademy-Home_Page
 block scripts
-    script(src='/static/index.js')
+    script(src='../static/index.js')
 block style
     style 
         include ../static/style.css
@@ -11,10 +11,15 @@ block content
     section#intro-section      
         h2 Welcome to India's Best Dance Accademy.
         p Why Walk ! When You Want To Dance :)
+    div#intro-cards
+        h2 S.D.A Is Now Avaliable Here Also
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laboriosam sed dolore? Lorem, ipsum dolor  Ex rem provident quas asperiores deserunt, tempora incidunt commodi corporis voluptatem modi dicta laborum.
+        input(type="search" placeholder="Search Our Services Here" name="Search" id="search")
+        button(type="search") Search
+            
     section#service-section
         h3 Our Services
         div#container
-            
             div.cards
                 h2 Classical Dance
                     div.card-inside
